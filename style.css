@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    
+    color: rgba(255, 255, 255, 0.603);
+
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #241f30;
+}
+
+.main {
+    display: flex;
+    background-color: #1A1527;
+    border-radius: 20px;
+    position: relative;
+    padding: 0px;
+
+    overflow: hidden;
+
+    box-shadow: 0px 1px 24px -1px rgba(0, 0, 0, 0.192);
+
+    width: 65%;
+    height: 90%;
+    justify-content: center;
+    align-items: center;
+}
+
+.main .bg {
+    display: flex;
+}
+
+.main .small-bg {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.main .bg-1 {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.main .bg-2 {
+    display: flex;
+    
+}
+
+.main .bg-3 {
+    display: flex;
+}
+
+.main .bg .circle {
+    width: 280px;
+    height: 280px;
+    background: linear-gradient(225deg, #5B75FF 29.22%, #FF5B6F 100%);
+    position: absolute;
+    border-radius: 100%;
+    top: -10%;
+    left: -10%;
+
+    filter: blur(20px);
+    transform: rotate(-30deg);
+}
+
+.main .small-bg .small-circle {
+    width: 90px;
+    height: 90px;
+    background: linear-gradient(225deg, #87D7AC 21.58%, #7438F3 83.91%);
+    position: absolute;
+    border-radius: 100%;
+
+    filter: blur(15px);
+    transform: rotate(-30deg);
+
+    top: 80%;
+    right: 10%;
+}
+
+.main .bg-1 .circle-1 {
+    width: 280px;
+    height: 280px;
+    background: linear-gradient(225deg, #5B75FF 29.22%, #FF5B6F 100%);
+
+    position: absolute;
+    border-radius: 100%;
+    top: 10%;
+    right: 15%;
+}
+
+.main .bg-2 .circle-2 {
+    width: 150px;
+    height: 150px;
+    background: linear-gradient(225deg, #87D7AC 21.58%, #7438F3 83.91%);
+
+    position: absolute;
+    border-radius: 100%;
+    top: 55%;
+    left: 15%;
+}
+
+.main .bg-3 .circle-3 {
+    width: 70px;
+    height: 70px;
+    background: linear-gradient(225deg, #FF5B6F 21.58%, #7438F3 83.91%);
+
+    position: absolute;
+    border-radius: 100%;
+    top: 25%;
+    left: 30%;
+}
+
+.card {
+    background: linear-gradient(113.8deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.1) 70.86%);
+    box-shadow: 0px 1px 24px -1px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+
+    border-image-source: linear-gradient(109.92deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 44.16%, rgba(116, 56, 243, 0) 61.07%, rgba(116, 56, 243, 0.5) 100%);
+    
+    width: 55%;
+    height: fit-content;
+    border-radius: 20px;
+    border: 2px solid rgba(116, 56, 243, 0.5);
+
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: space-between;
+
+    overflow: hidden;
+}
+
+.card .images {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    mix-blend-mode: overlay;
+}
+
+.card .images img {
+    width: 50px;
+}
+
+.card .images img:first-child {
+    opacity: 0.6;
+}
+
+.card .images img:last-child {
+    width: 60px;
+}
+
+.card .number {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.card .number h1 {
+    font-size: 2rem;
+    letter-spacing: 0.15rem;
+    font-weight: 600;
+    margin: 40px 30px 40px 0;
+    mix-blend-mode: overlay;
+}
+
+.card .number h1:last-child{
+    margin-right: 0;
+}
+
+.data {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card .data h2 {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+@media only screen and (min-width: 1080px) {
+
+
+    .card {
+        width: fit-content;
+    }
+}
+
+@media only screen and (min-width: 1140px) {
+
+
+    .card {
+        width: fit-content;
+    }
+
+    .main .bg .circle {
+        top: -15%;
+        left: -15%;
+    }
+    
+    .main .small-bg .small-circle {
+        top: 75%;
+        right: 10%;
+    }
+
+    .main .bg-1 .circle-1 {
+        top: 10%;
+        right: 10%;
+    }
+    
+    .main .bg-2 .circle-2 {
+        top: 55%;
+        left: 15%;
+    }
+    
+    .main .bg-3 .circle-3 {
+        top: 20%;
+        left: 40%;
+    }
+}
+
+@media only screen and (min-width: 800px) and (max-width: 1068px) {
+    .card .number h1 {
+        font-size: 1.5rem;
+    }
+
+    .card {
+        height: 40%;
+    }
+}
+
+@media only screen and (min-width: 640px) and (max-width: 799px) {
+    .card .number h1 {
+        font-size: 1.2rem;
+    }
+
+    .card {
+        height: 35%;
+    }
+
+    .card .data h2 {
+        font-size: 1rem;
+        font-weight: 500;
+    }
+
+
+}
+
+@media only screen and (max-width: 639px) {
+    .card .number h1 {
+        font-size: 1.5rem;
+    }
+
+    .card {
+        height: 60%;
+    }
+
+    .card .data h2 {
+        font-size: 1rem;
+        font-weight: 500;
+    }
+
+    
+    .data {
+        flex-direction: column;
+    }
+
+    .card .number h1 {
+        margin: 0 5px 0 0;
+    }
+
+    .card .number {
+        display: inline;
+        margin: 0;
+
+    }
+}
+
+@media only screen and (max-width: 404px) {
+    .card .number h1 {
+        font-size: 1.5rem;
+    }
+
+    .card {
+        height: 55%;
+    }
+
+    .card .data h2 {
+        font-size: 1rem;
+        font-weight: 500;
+    }
+
+    
+    .data {
+        flex-direction: column;
+    }
+
+    .card .number h1 {
+        margin-right: 5px;
+    }
+
+    .card .number {
+        display: inline;
+        margin: 0;
+
+    }
+
+    .card .images {
+        flex-direction: column;
+    }
+
+    .card .images img:first-child {
+        margin-bottom: 20px;
+    }
+}
